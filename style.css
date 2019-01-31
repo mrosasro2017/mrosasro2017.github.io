@@ -15,6 +15,7 @@ h1 {
     width: 100%;
     font-family: Georgia;
     text-align: center;
+    font-style: italic;
 }
 
 h2, a {
@@ -27,12 +28,13 @@ h2, a {
     text-align: left;
     width: 70%;
     font-family: Georgia;
+    font-style: italic;
 }
 
-img {
-    background-size: cover;
+IMG {
+  
     background-position: center;
-    width: 300px;
+    width: 250px;
     height: 300px;
 }
 
@@ -42,8 +44,8 @@ p {
     line-height: 1.3em;
     text-align: left;
     width: 100%;
-    font-family: Helvetica;
-    font-size: 18px;
+    font-family: Garamond;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -82,7 +84,8 @@ p {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Peru_Quake_Aug_15-2007.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
+    width: 750px;
+    height: 1000px;
 }
 
 .writer-img {
