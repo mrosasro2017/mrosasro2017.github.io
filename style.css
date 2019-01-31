@@ -36,6 +36,7 @@ IMG {
     background-position: center;
     width: 250px;
     height: 300px;
+    align-content:center;
 }
 
 
@@ -75,8 +76,13 @@ p {
 }
 
 .faceimage {
-    width: 50px;
-    height: 75px;
+    width: 100px;
+    height: 150px;
+}
+
+.wireframeIMG {
+    width: 700px;
+    height: 500px;
 }
 
 .content {
