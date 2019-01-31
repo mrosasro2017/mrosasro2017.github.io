@@ -1,9 +1,9 @@
 body {
     background: #33FFB1;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(-45deg, #CEFF33, #A233FF);
+    background: -webkit-linear-gradient(-45deg, #CEFF33, #5E33FF);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(-45deg, #CEFF33, #A233FF);
+    background: linear-gradient(-45deg, #CEFF33, #5E33FF);
     margin: 0;
     padding: 0;
 }
