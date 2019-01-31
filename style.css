@@ -74,7 +74,10 @@ p {
     opacity: 0.75;
 }
 
-
+.faceimage {
+    width: 50px;
+    height: 75px;
+}
 
 .content {
     padding: 40px;
