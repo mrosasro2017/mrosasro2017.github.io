@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Unit Convertor for Civil Engineering 514
+    </title>
+    <link href="unitconvertor.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="unitconvertor.js"></script>
+
+</head>
+<BODY>
+    <h1><b>Unit Convertor for Civil Engineering 514</b></h1>
+    
+    <div class="main">
+        <p>
+            <input type="text" placeholder="Enter a number" id="first" />
+            Unit:
+            <select onchange="convertorFunction()" id="third">
+
+                <option value="s">seconds</option>
+                <option value="min">minutes</option>
+                <option value="hr">hours</option>
+                <option value="day">days</option>
+                <option value="yr">years</option>
+
+                <option value="in">inches</option>
+                <option value="ft">feet</option>
+                <option value="yrd">yards</option>
+                <option value="mi">miles</option>
+                <option value="m">meters</option>
+                <option value="km">kilometers</option>
+
+                <option value="g">grams</option>
+                <option value="kg">Kilograms</option>
+                <option value="oz">ounces</option>
+                <option value="lb">lbs</option>
+                <option value="slug">slugs</option>
+                <option value="ton">tons</option>
+
+            </select>
+
+        </p>
+
+        <p><input type="text" id="second" placeholder="Result...">Covert:<select onchange="displayConversion()" id="fouth"> </select>  </p>
+    </div>
+    
+    <p>First Select a Unit from above box then enter a number in first input box and then select a unit in convert box the result will be here in result box.</p>
+   
+    
+
+</BODY>
+</html>
