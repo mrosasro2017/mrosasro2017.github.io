@@ -1,39 +1,71 @@
 ﻿body {
-    background: #59CF96;
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    background: #FF4500;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(-45deg, #CEFF33, #59CF96);
+    background: -webkit-linear-gradient(-45deg, #CEFF33, #FF4500);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(-45deg, #CEFF33, #59CF96);
+    background: linear-gradient(-45deg, #CEFF33, #FF4500);
 }
 
 .main {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     border: 3px solid;
     width: 50%;
     margin: 10% auto;
     box-shadow: 2px 2px 20px brown;
-    background-color: springgreen;
+    background-color: sandybrown;
     border-radius: 50px;
+    text-align: center;
 }
 
 p {
-    margin: 10% auto;
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     padding: 10;
     width: 80%;
+    text-align: center;
+    font-size: 16px;
+}
+
+text {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    text-align: center;
 }
 
 input {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     padding: 10px;
     border: 2px solid gray;
     border-radius: 10px;
+    text-align: center;
 }
 
 select {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    text-align: center;
     padding: 10px;
     border: 2px solid gray;
     border-radius: 10px;
 }
 
 h1 {
+    font-family: "Bookman Old Style", "Bookman Old Style", sans-serif;
     text-align: center;
     color: green;
+}
+
+
+.dropdown {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    position: absolute;
+    min-width: 160px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px;
+    text-align: center;
 }

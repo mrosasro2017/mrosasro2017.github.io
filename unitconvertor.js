@@ -1,46 +1,78 @@
+function convertToMeters(inputNumber, InputUnits) {
+	//converts anything to meters
+	if (InputUnits == "Inches") {
+		outputMeters = inputNumber * 0.0254;
+        return outputMeters;
+	}
+	else if (InputUnits == "Feet") {
+        outputMeters = inputNumber * 0.3048;
+        return outputMeters;
+	}
+	else if (InputUnits == "Miles") {
+        outputMeters = inputNumber * 1609.34;
+        return outputMeters;
+	}
+	else if (InputUnits == "Millimeters") {
+        outputMeters = inputNumber / 1000;
+        return outputMeters;
+	}
+	else if (InputUnits == "Centimeters") {
+        outputMeters = inputNumber / 100;
+        return outputMeters;
+	}
+	else if (InputUnits == "Meters") {
+        outputMeters = inputNumber;
+        return outputMeters;
+	}
+	else if (InputUnits == "Kilometers") {
+        outputMeters = inputNumber * 1000;
+        return outputMeters;
+	}
+}
 
-var InputNumber = document.getElementById("first");
-var OutputNumber = document.getElementById("second");
-var InputUnits = document.getElementById("third");
-var OutputUnits = document.getElementById("fourth");
+function convertFromMeters(inputMeters, outputUnits) {
+	//converts to outputUnits
+	if (outputUnits == "Inches") {
+		OutputNumber = inputMeters / 0.0254;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Feet") {
+        OutputNumber = inputMeters / 0.3048;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Miles") {
+        OutputNumber = inputMeters / 1609.34;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Millimeters") {
+        OutputNumber = inputMeters * 1000;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Centimeters") {
+        OutputNumber = inputMeters * 100;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Meters") {
+        OutputNumber = inputMeters;
+        return OutputNumber;
+	}
+	else if (outputUnits == "Kilometers") {
+        OutputNumber = inputMeters / 1000;
+        return OutputNumber;
+	}
+}
 
-    function ConvertorFunction1() {
+function totalConversionFunction() {
+	var inputUnitsBox = document.getElementById("Input Units");
+	var InputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
+	var outputUnitsBox = document.getElementById("Output Units");
+	var OutputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
+	var InputValue = document.getElementById("inputNumber").value;
+	
+    outputMeters = convertToMeters(InputValue, InputUnits);
+    OutputNumber = convertFromMeters(outputMeters, OutputUnits);
+    var outputSentence = InputValue + " " + InputUnits + " is approximately the same as " + OutputNumber + " " + OutputUnits;
 
-        if (InputUnits.value == "s" || InputUnits.value == "min" || InputUnits.value == "hr" || InputUnits.value == "day" || InputUnits.value == "yr") {
-            OutputUnits.innerHTML = "<option value=\"s\">seconds</option><option value=\"min\">minutes</option>< option value =\"hr\">hours</option>< option value =\"day\">days</option>< option value =\"yr\">years</option>";
-        }
+	document.getElementById("convertSentence").innerHTML = outputSentence;
+}
 
-        if (InputUnits.value == "in" || InputUnits.value == "ft" || InputUnits.value == "yrd" || InputUnits.value == "mi" || InputUnits.value == "m" || InputUnits.value == "km") {
-            OutputUnits.innerHTML = "<option value=\"in\">inches</option><option value=\"ft\">feet</option><option value=\"yrd\">yards</option><option value=\"mi\">miles</option><option value=\"m\">meters</option><option value=\"km\">kilometers</option>";
-        }
-
-        if (InputUnits.value == "g" || InputUnits.value == "kg" || InputUnits.value == "oz" || InputUnits.value == "lb" || InputUnits.value == "slug" || InputUnits.value == "ton") {
-            OutputUnits.innerHTML = "<option value=\"g\">grams</option><option value=\"kg\">kilograms</option><option value=\"oz\">Ounces</option><option value=\"lb\">pounds</option><option value=\"slug\">slugs</option><option value=\"ton\">tons</option>";
-        }
-    }
-
-    function displayConversion() {
-
-        if (InputValue.value == "s" || InputUnits.value == "min") {
-            if (OutputUnits.value == "s" && InputUnits.value == "s") { OutputNumber.value = InputNumber.value; }
-            if (OutputUnits.value == "s" && InputUnits.value == "min") { OutputNumber.value = InputNumber.value * 60; }
-            if (OutputUnits.value == "min" && InputUnits.value == "s") { OutputNumber.value = InputNumber.value / 60; }
-            if (OutputUnits.value == "min" && InputUnits.value == "min") { OutputNumber.value = OutputNumber.value; }
-        }
-        if (y.value == "m" || y.value == "km") {
-
-            if (OutputUnits.value == "m" && InputUnits.value == "m") { OutputNumber.value = OutputNumber.value; }
-            if (OutputUnits.value == "m" && InputUnits.value == "km") { OutputNumber.value = OutputNumber.value * 1000; }
-            if (OutputUnits.value == "km" && InputUnits.value == "m") { OutputNumber.value = OutputNumber.value / 1000; }
-            if (OutputUnits.value == "km" && InputUnits.value == "km") { OutputNumber.value = OutputNumber.value; }
-
-        }
-        if (y.value == "g" || y.value == "kg") {
-            if (OutputUnits.value == "g" && InputUnits.value  == "g") { OutputNumber.value = InputNumber.value; }
-            if (OutputUnits.value == "g" && InputUnits.value == "kg") { OutputNumber.value = InputNumber.value * 1000; }
-            if (OutputUnits.value == "kg" && InputUnits.value == "g") { OutputNumber.value = InputNumber.value / 1000; }
-            if (OutputUnits.value == "kg" && InputUnits.value == "kg") { OutputNumber.value = InputNumber.value; }
-
-        }
-
-    }

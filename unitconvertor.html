@@ -10,43 +10,56 @@
 </head>
 <BODY>
     <h1><b>Unit Convertor for Civil Engineering 514</b></h1>
-    
+
     <div class="main">
+
+
         <p>
-            <input type="text" placeholder="Enter a number" id="first" />
-            Unit:
-            <select onchange="convertorFunction()" id="third">
+            <input type="text" placeholder="Enter a number" id="inputNumber" text-align: center/>
+            </p>
+        <p>
+            Input Units:
+            <!-- Input Units -->
+            <div id="dropdown">
+                <select id="Input Units">
+                    <option value="Inches">Inches</option>
+                    <option value="Feet">Feet</option>
+                    <option value="Miles">Miles</option>
+                    <option value="Millimeters">Millimeters</option>
+                    <option value="Centimeters">Centimeters</option>
+                    <option value="Meters">Meters</option>
+                    <option value="Kilometers">Kilometers</option>
+                </select>
+            </div>
 
-                <option value="s">seconds</option>
-                <option value="min">minutes</option>
-                <option value="hr">hours</option>
-                <option value="day">days</option>
-                <option value="yr">years</option>
-
-                <option value="in">inches</option>
-                <option value="ft">feet</option>
-                <option value="yrd">yards</option>
-                <option value="mi">miles</option>
-                <option value="m">meters</option>
-                <option value="km">kilometers</option>
-
-                <option value="g">grams</option>
-                <option value="kg">Kilograms</option>
-                <option value="oz">ounces</option>
-                <option value="lb">lbs</option>
-                <option value="slug">slugs</option>
-                <option value="ton">tons</option>
-
-            </select>
 
         </p>
-
-        <p><input type="text" id="second" placeholder="Result...">Covert:<select onchange="displayConversion()" id="fouth"> </select>  </p>
+        <p>
+            Output Units:
+            <!-- Output Units -->
+            <div id="dropdown">
+                <select id="Output Units">
+                    <option value="Inches">Inches</option>
+                    <option value="Feet">Feet</option>
+                    <option value="Miles">Miles</option>
+                    <option value="Millimeters">Millimeters</option>
+                    <option value="Centimeters">Centimeters</option>
+                    <option value="Meters">Meters</option>
+                    <option value="Kilometers">Kilometers</option>
+                </select>
+            </div>
+        </p>
+        <script type="text/javascript" src="unitconvertor.js"></script>
     </div>
-    
-    <p>First Select a Unit from above box then enter a number in first input box and then select a unit in convert box the result will be here in result box.</p>
-   
-    
+
+    <p>
+        <input type=button value="Convert" onclick="totalConversionFunction()">
+    </p>
+    <p id="convertSentence"></p>
+    </p>
+    <p>Enter a number and select the initial units and the final units. Press the convert button and the conversion will be displayed.</p>
+
+
 
 </BODY>
 </html>
