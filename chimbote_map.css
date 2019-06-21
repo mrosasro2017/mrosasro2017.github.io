@@ -1,0 +1,23 @@
+﻿h1 {
+    font-family: "Bookman Old Style", Gadget, sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    color: rgb (64,64,64);
+}
+
+p {
+    font-family: Algerian, Geneva, sans-serif;
+    font-size: 15px;
+    color: rgb (64,64,64);
+}
+
+img {
+    height: 150%;
+}
+
+h2 {
+    background: none;
+    font-family: 'Californian FB', Helvetica, sans-serif;
+    color: gray;
+    text-align: center;
+}
