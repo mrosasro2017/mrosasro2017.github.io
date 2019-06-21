@@ -1,0 +1,107 @@
+require([
+    "esri/Map",
+    "esri/views/MapView"
+], function (
+    Map,
+    MapView
+) {
+        const map = new Map({
+            basemap: "streets-navigation-vector"
+        });
+
+        const view = new MapView({
+            container: "viewDiv",
+            map: map,
+            zoom: 1,
+            center: {
+                latitude: 0,
+                longitude: 0
+            }
+        });
+
+        let latitudesList = [
+            18.588025,
+            -0.741182,
+            -40.929923,
+            -25.690871,
+            58.554978,
+            45.976577,
+            60.963107,
+            48.770959,
+            -17.925976,
+            38.891225
+        ];
+
+        let longitudesList = [
+            98.487056,
+            -90.306385,
+            172.970942,
+            -54.440813,
+            -155.791548,
+            7.658461,
+            6.967813,
+            -121.298461,
+            25.857526,
+            -77.026066
+        ];
+
+        let bucketListPlacesNames = [
+            "Doi Inthanon National Park , Thailand",
+            "Galapagos Islands, Ecuador",
+            "Abel Tasman National Park, New Zealand",
+            "Iguazu Falls, Argentina",
+            "Katmai National Park, AK",
+            "Matterhorn, Switzerland",
+            "Nærøyfjord Aurland, Norway",
+            "North Cascades National Park, WA",
+            "Victoria Falls, Zimbabwe",
+            "Washington DC"
+        ];
+
+        let placesDescriptionList = [
+            "My Dad served his mission in Thailand, so I've always wanted to go." +
+            "<img alt='Thailand img' width=100% src='http://static.asiawebdirect.com/m/bangkok/portals/chiangmai-bangkok-com/shared/teasersL/top10-attractions/teaserMultiLarge/imageHilight/top-ten_cm.jpg'>",
+            "I've always been fascinated by the Galapagos Islands. It is a very unique place and the history is pretty cool." +
+            "<img alt='Galapagos img' width=100% src='https://www.abercrombiekent.com/-/media/ak/media-for-prod/destinations/mastheads/south-america-galapagos-marine-iguana-mh.jpg?h=500&w=1224&la=en&hash=F53C7B40EF7100832F7F6DD13C3A0E623F140327'>",
+            "New Zealand has always been a place that I want to visit. This national park looks amazing." +
+            "<img alt='Abel Tasman NP img' width=100% src='https://d3ngrkosxxbdp2.cloudfront.net/wp-content/uploads/2018/03/hero-abel-tasman-coastline.jpg' >",
+            "I served my mission in Paraguay, and this is near the Paraguay, Argentina, and Brazil border. It's probably the best thing in/near Paraguay." +
+            "<img alt='Iguazu Falls img' width=100% src='https://img.flytap.com/cities/iguassu-falls.jpg' >",
+            "I have always loved bears, since I was a little kid. I have always wanted to see the fish in Alaska. Apparently, this is one of the best places to see them." +
+            "<img alt='Katmai NP img' width=100% src='https://www.ajharrisonphoto.com/img/s/v-3/p1954186568-5.jpg' >",
+            "The Swiss Alps would be cool to see, especially this peak." +
+            "<img alt='Matterhorn img' width=100% src='https://www.outdooractive.com/img//800/24516005/.jpg' >",
+            "My wife's family comes from Norway, and I think the fjords are beautiful." +
+            "<img alt='Nærøyfjord img' width=100% src='https://static1.squarespace.com/static/5549f941e4b0be890383c7c4/t/56b4a9994d088e723de53365/1454680475379/naeroyfjorden.jpg' >",
+            "I would love to backpack up in the cascades. The mountains are breathtaking." +
+            "<img alt='N Cascades NP img' width=100% src='https://www.gannett-cdn.com/-mm-/e6c17e797b5584fba45ce76a17ac39049b00308b/c=0-0-1498-846/local/-/media/2018/10/09/USATODAY/USATODAY/636746887858298738-NorthCascadesNPMichaelRickardSTESmall.jpg?width=3200&height=1680&fit=crop' >",
+            "This is another cool waterfall. It is amazing how big it is." +
+            "<img alt='Victoria Falls img' width=100% src='https://victoriafallstourism.org/wp-content/uploads/2018/01/victoria_falls.jpg'>",
+            "I would really enjoy seeing the history in DC. I could spend a lot of time at the Smithsonian alone." +
+            "<img alt='DC img' width=100% src='https://assets0.roadtrippers.com/uploads/poi_gallery_image/image/322393368/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/poi_gallery_image-image-91820fde-ce83-4f10-9055-4d64ab9d4c00.jpg'>"
+        ]
+
+        for (let i = 0; i < longitudesList.length; i++) {
+
+            view.graphics.add({
+                symbol: {
+                    type: "text",
+                    color: "#c13d11",
+                    text: "\ue600",
+                    font: {
+                        size: 20,
+                        family: "CalciteWebCoreIcons"
+                    }
+                },
+                geometry: {
+                    type: "point",
+                    longitude: longitudesList[i],
+                    latitude: latitudesList[i]
+                },
+                popupTemplate: {
+                    title: bucketListPlacesNames[i],
+                    content: placesDescriptionList[i]
+                }
+            });
+        };
+    });

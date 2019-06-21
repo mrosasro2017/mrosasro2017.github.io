@@ -41,18 +41,19 @@ function initMap() {
         map: map,
         title: "Las Gardenias Stake Center"
     });
-    var BellamarChurch = '<div id="content">' +
+    var BellamarChurchString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Las Gardenias Stake Center</h1>' +
-        '<p>Anthony went to church here before and after his mission. Bellamar ward was amazing.</p>' +
+        "<p>Anthony went to church here before and after his mission. Bellamar ward was amazing.</p>" +
         '<img src = "bellamar_church.jpg">';
-    var churchInfo = new google.maps.InfoWindow({
-        content: BellamarChurch
+    var BellamarChurchInfo = new google.maps.InfoWindow({
+        content: BellamarChurchString
     });
     BellamarChurchMarker.addListener('click', function () {
-        churchInfo.open(map, BellamarChurchMarker);
+        BellamarChurchInfo.open(map, BellamarChurchMarker);
     });
+
 
 
     //Nachos Restaurant
