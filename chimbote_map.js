@@ -203,12 +203,12 @@ function initMap() {
             {
                 featureType: 'landscape.natural',
                 elementType: 'geometry',
-                stylers: [{ color: '#aedfb2' }]
+                stylers: [{ color: '#c9d177' }]
             },
             {
                 featureType: 'poi',
                 elementType: 'geometry',
-                stylers: [{ color: '#aedfb2' }]
+                stylers: [{ color: '#c9d177' }]
             },
             {
                 featureType: 'poi',
@@ -283,12 +283,12 @@ function initMap() {
             {
                 featureType: 'water',
                 elementType: 'geometry.fill',
-                stylers: [{ color: '#95edb3' }]
+                stylers: [{ color: '#2a39ba' }]
             },
             {
                 featureType: 'water',
                 elementType: 'labels.text.fill',
-                stylers: [{ color: '#92998d' }]
+                stylers: [{ color: '#3343d6' }]
             }
         ],
         { name: 'Styled Map' });
