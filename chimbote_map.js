@@ -46,7 +46,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Las Gardenias Stake Center</h1>' +
         "<p>Anthony went to church here before and after his mission. Bellamar ward was amazing.</p>" +
-        '<img src = "bellamar_church.jpg">';
+        '<img src = "bellamar_church.JPG">';
     var BellamarChurchInfo = new google.maps.InfoWindow({
         content: BellamarChurchString
     });
@@ -67,7 +67,7 @@ function initMap() {
         '</div>' +
         "<h1 id='firstHeadin' class='firstHeading'>Los Nachos Restaurant</h1>" +
         '<p>This is Los Nachos restaurant. You can get a really good ceviche and all kinds of seafood when you eat there.</p>' +
-        '<img src = "nachos_restaurant.jpg">';
+        '<img src = "nachos_restaurant.JPG">';
     var nachosInfo = new google.maps.InfoWindow({
         content: nachosString
     });
