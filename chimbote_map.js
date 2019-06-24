@@ -108,7 +108,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Rosas Family House</h1>' +
         '<p>This is the house where Anthony s father grew up. Most of Anthony s aunts, uncles and cousins live nearby.</p>' +
-        '<img src = "rosas_family_house.jpg">';
+        '<img src = "rosas_family_house.JPG">';
     var arequipaHouseInfo = new google.maps.InfoWindow({
         content: arequipaHouseString
     });
@@ -129,7 +129,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Anthony s childhood house</h1>' +
         '<p> This is the house where Anthony grew up. He lived here until he was 8 years old with his mom, dad and little sister Marggie.</p>' +
-        '<img src = "arequipa_childhood_house.jpg">';
+        '<img src = "arequipa_childhood_house.JPG">';
     var arequipaChildhoodHouseInfo = new google.maps.InfoWindow({
         content: arequipaChildhoodHouseString
     });
@@ -149,7 +149,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Anthony s childhood house</h1>' +
         '<p> This is the house where Anthony grew up. He lived here until he was 8 years old with his mom, dad and little sister Marggie.</p>' +
-        '<img src = "arequipa_childhood_house.jpg">';
+        '<img src = "arequipa_childhood_house.JPG">';
     var arequipaChildhoodHouseInfo = new google.maps.InfoWindow({
         content: arequipaChildhoodHouseString
     });
@@ -169,7 +169,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa LDS Temple</h1>' +
         '<p>This is the Arequipa Peru Temple. It is still under construction. It will be dedicated on November 2019. Anthony will try to visit this tempe on Christmas 2019</p>' +
-        '<img src = "arequipa_temple.jpg">';
+        '<img src = "arequipa_temple.JPG">';
     var arequipaTempleInfo = new google.maps.InfoWindow({
         content: arequipaTempleString
     });
