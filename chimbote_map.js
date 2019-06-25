@@ -137,37 +137,17 @@ function initMap() {
         arequipaChildhoodHouseInfo.open(map, arequipaChildhoodHouse);
     });
 
-    // Arequipa Childhood House 
-    var arequipaChildhoodHouse = { lat: -16.333128, lng: -71.551183 }
-    var arequipaChildhoodHouse = new google.maps.Marker({
-        position: arequipaChildhoodHouse,
-        map: map,
-        title: 'Arequipa Childhood House'
-    });
-    var arequipaChildhoodHouseString = '<div id="content">' +
-        '<div id="siteNotice">' +
-        '</div>' +
-        '<h1 id="firstHeadin" class="firstHeading">Arequipa Anthony s childhood house</h1>' +
-        '<p> This is the house where Anthony grew up. He lived here until he was 8 years old with his mom, dad and little sister Marggie.</p>' +
-        '<img src = "arequipa_childhood_house.JPG">';
-    var arequipaChildhoodHouseInfo = new google.maps.InfoWindow({
-        content: arequipaChildhoodHouseString
-    });
-    arequipaChildhoodHouse.addListener('click', function () {
-        arequipaChildhoodHouseInfo.open(map, arequipaChildhoodHouse);
-    });
-
     // Arequipa Temple
     var arequipaTempleLatLng = { lat: -16.374935, lng: -71.538171 }
     var arequipaTempleMarker = new google.maps.Marker({
         position: arequipaTempleLatLng,
         map: map,
-        title: 'Arequipa LDS temple'
+        title: 'Arequipa Peru LDS Temple'
     });
     var arequipaTempleString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h1 id="firstHeadin" class="firstHeading">Arequipa LDS Temple</h1>' +
+        '<h1 id="firstHeadin" class="firstHeading">Arequipa Peru LDS Temple</h1>' +
         '<p>This is the Arequipa Peru Temple. It is still under construction. It will be dedicated on November 2019. Anthony will try to visit this tempe on Christmas 2019</p>' +
         '<img src = "arequipa_temple.JPG">';
     var arequipaTempleInfo = new google.maps.InfoWindow({
@@ -177,8 +157,186 @@ function initMap() {
         arequipaTempleInfo.open(map, arequipaTempleMarker);
     });
 
+    //Trujillo Childhood House 
+    var trujilloHouseLatLng = { lat: -8.093861, lng: -79.038276 }
+    var trujilloHouseMarker = new google.maps.Marker({
+        position: trujilloHouseLatLng,
+        map: map,
+        title: 'Trujillo Childhood House'
+    });
+    var trujilloHouseString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Trujillo Childhood House</h1>' +
+        '<p>Anthony lived here with his family for 2 years (8-10 years old). It was such an adventure because it was the first place where his family moved since he was born.</p>' +
+        '<img src = "trujillo_house.jpg">';
+    var trujilloHouseInfo = new google.maps.InfoWindow({
+        content: trujilloHouseString
+    });
+    trujilloHouseMarker.addListener('click', function () {
+        trujilloHouseInfo.open(map, trujilloHouseMarker);
+    });
+
+    // Trujillo Temple
+    var trujilloTempleLatLng = { lat: -8.100177, lng: -79.058647 }
+    var trujilloTempleMarker = new google.maps.Marker({
+        position: trujilloTempleLatLng,
+        map: map,
+        title: 'Trujillo Peru LDS Temple'
+    });
+    var trujilloTempleString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Trujillo Peru LDS Temple</h1>' +
+        '<p>This Temple was dedicated not too long ago. It is currently Anthony s favorite temple in Peru.</p>' +
+        '<img src = "trujillo_temple.jpg">';
+    var limaGrandparentsHouseInfo = new google.maps.InfoWindow({
+        content: trujilloTempleString
+    });
+    trujilloTempleMarker.addListener('click', function () {
+        limaGrandparentsHouseInfo.open(map, trujilloTempleMarker);
+    });
+
+    // Rosas Family Ica House 
+    var rosasIcaHouseLatLng = { lat: -14.070348, lng: -75.730838 }
+    var rosasIcaHouseMarker = new google.maps.Marker({
+        position: rosasIcaHouseLatLng,
+        map: map,
+        title: 'Rosas Family Ica House'
+    });
+    var rosasIcaHouseString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Ica Childhood House</h1>' +
+        '<p>Anthony lived here with his family since he was 10 until he was 14 years old.</p>' +
+        '<img src = "ica_house.jpg">';
+    var rosasIcaHouseInfo = new google.maps.InfoWindow({
+        content: rosasIcaHouseString
+    });
+    rosasIcaHouseMarker.addListener('click', function () {
+        rosasIcaHouseInfo.open(map, rosasIcaHouseMarker);
+    });
 
 
+    // Lima Grandparents House 
+    var limaGrandparentsHouseLatLng = { lat: -12.047173, lng: -77.036338 }
+    var limaGrandparentsHouseMarker = new google.maps.Marker({
+        position: limaGrandparentsHouseLatLng,
+        map: map,
+        title: 'Lima Grandparents House'
+    });
+    var limaGrandparentsHouseString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Lima Grandparents House</h1>' +
+        '<p>This is where Anthony s mom grew up. His grandparents still live here and it is usually the meeting point of all of this side of the family.</p>' +
+        '<img src = "lima_grandparents_house.jpg">';
+    var limaGrandparentsHouseInfo = new google.maps.InfoWindow({
+        content: limaGrandparentsHouseString
+    });
+    limaGrandparentsHouseMarker.addListener('click', function () {
+        limaGrandparentsHouseInfo.open(map, limaGrandparentsHouseMarker);
+    });
+
+    // Lima Rosas House 
+    var limaHouseLatLng = { lat: -12.048482, lng: -77.034279 }
+    var limaHouseMarker = new google.maps.Marker({
+        position: limaHouseLatLng,
+        map: map,
+        title: 'Rosas Family Lima House'
+    });
+    var limaHouseString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Rosas Family Lima House</h1>' +
+        '<p>Anthony lived here with his family since he was 14 until he was 16 years old.</p>' +
+        '<img src = "lima_rosas_house.jpg">';
+    var limaHouseInfo = new google.maps.InfoWindow({
+        content: limaHouseString
+    });
+    limaHouseMarker.addListener('click', function () {
+        limaHouseInfo.open(map, limaHouseMarker);
+    });
+
+    // Trilce High School 
+    var trilceHighSchoolLatLng = { lat: 40.881784, lng: -111.871361 }
+    var trilceHighSchoolMarker = new google.maps.Marker({
+        position: trilceHighSchoolLatLng,
+        map: map,
+        title: 'Trilce High School'
+    });
+    var trilceHighSchoolString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Trilce High School</h1>' +
+        '<p>Anthony finished High School here. Really good three years.</p>' +
+        '<img src = "trilce_high_school.jpg">';
+    var trilceHighSchoolInfo = new google.maps.InfoWindow({
+        content: trilceHighSchoolString
+    });
+    trilceHighSchoolMarker.addListener('click', function () {
+        trilceHighSchoolInfo.open(map, trilceHighSchoolMarker);
+    });
+
+    // Lima Anthony's Apartment 
+    var anthonyApartmentLatLng = { lat: -12.061854, lng: -77.057611 }
+    var anthonyApartmentMarker = new google.maps.Marker({
+        position: anthonyApartmentLatLng,
+        map: map,
+        title: 'Anthony Apartment'
+    });
+    var anthonyApartmentString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Anthony Apartment</h1>' +
+        '<p>Anthony lived by himself here for like a year after his mission when attending to college.</p>' +
+        '<img src = "anthony_apartment.jpg">';
+    var anthonyApartmentInfo = new google.maps.InfoWindow({
+        content: anthonyApartmentString
+    });
+    anthonyApartmentMarker.addListener('click', function () {
+        anthonyApartmentInfo.open(map, anthonyApartmentMarker);
+    });
+
+    // Pontific Catholic University of Peru
+    var pucpLatLng = { lat: -12.070864, lng: -77.079645 }
+    var pucpMarker = new google.maps.Marker({
+        position: pucpLatLng,
+        map: map,
+        title: 'PUCP'
+    });
+    var pucpString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">PUCP</h1>' +
+        '<p>Anthony attended to college here for a year before transferring to BYU.</p>' +
+        '<img src = "pucp.jpg">';
+    var pucpInfo = new google.maps.InfoWindow({
+        content: pucpString
+    });
+    pucpMarker.addListener('click', function () {
+        pucpInfo.open(map, pucpMarker);
+    });
+
+    // Lima Peru Temple 
+    var limaTempleLatLng = { lat: -12.069776, lng: -76.948975 }
+    var limaTempleMarker = new google.maps.Marker({
+        position: limaTempleLatLng,
+        map: map,
+        title: 'Lima Peru LDS Temple'
+    });
+    var limaTempleString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Lima Peru LDS Temple</h1>' +
+        '<p>This is the oldest temple in Peru. such good memories made there.</p>' +
+        '<img src = "lima_temple.jpg">';
+    var limaTempleInfo = new google.maps.InfoWindow({
+        content: limaTempleString
+    });
+    limaTempleMarker.addListener('click', function () {
+        limaTempleInfo.open(map, limaTempleMarker);
+    });
 
 
     var styledMapType = new google.maps.StyledMapType(
