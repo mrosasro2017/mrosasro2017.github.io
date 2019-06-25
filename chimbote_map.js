@@ -177,25 +177,26 @@ function initMap() {
         trujilloHouseInfo.open(map, trujilloHouseMarker);
     });
 
-    // Trujillo Temple
-    var trujilloTempleLatLng = { lat: -8.100177, lng: -79.058647 }
-    var trujilloTempleMarker = new google.maps.Marker({
-        position: trujilloTempleLatLng,
+    // Trujillo LDS Temple 
+    var trujilloLDSTempleLatLng = { lat: 40.881784, lng: -111.871361 }
+    var trujilloLDSTempleMarker = new google.maps.Marker({
+        position: trujilloLDSTempleLatLng,
         map: map,
         title: 'Trujillo Peru LDS Temple'
     });
-    var trujilloTempleString = '<div id="content">' +
+    var trujilloLDSTempleString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Trujillo Peru LDS Temple</h1>' +
-        '<p>This Temple was dedicated not too long ago. It is currently Anthony s favorite temple in Peru.</p>' +
+        '<p>This is Anthony s favorite temple in Peru. It is just a 2 hour drive from his parents house.</p>' +
         '<img src = "trujillo_temple.jpg">';
-    var limaGrandparentsHouseInfo = new google.maps.InfoWindow({
-        content: trujilloTempleString
+    var trujilloLDSTempleInfo = new google.maps.InfoWindow({
+        content: trujilloLDSTempleString
     });
-    trujilloTempleMarker.addListener('click', function () {
-        limaGrandparentsHouseInfo.open(map, trujilloTempleMarker);
+    trujilloLDSTempleMarker.addListener('click', function () {
+        trujilloLDSTempleInfo.open(map, trujilloLDSTempleMarker);
     });
+
 
     // Rosas Family Ica House 
     var rosasIcaHouseLatLng = { lat: -14.070348, lng: -75.730838 }
