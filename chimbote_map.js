@@ -178,7 +178,7 @@ function initMap() {
     });
 
     // Trujillo LDS Temple 
-    var trujilloLDSTempleLatLng = { lat: 40.881784, lng: -111.871361 }
+    var trujilloLDSTempleLatLng = { lat: -8.100264, lng: -79.058636 }
     var trujilloLDSTempleMarker = new google.maps.Marker({
         position: trujilloLDSTempleLatLng,
         map: map,
