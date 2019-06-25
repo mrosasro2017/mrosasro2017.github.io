@@ -137,6 +137,27 @@ function initMap() {
         arequipaChildhoodHouseInfo.open(map, arequipaChildhoodHouse);
     });
 
+    // Arequipa Restaurant
+    var cieloArequipenoLatLng = { lat: -16.380715, lng: -71.552822 }
+    var cieloArequipenoMarker = new google.maps.Marker({
+        position: cieloArequipenoLatLng,
+        map: map,
+        title: 'Cielo Arequipeño Restaurant'
+    });
+    var cieloArequipenoString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeadin" class="firstHeading">Cielo Arequipeño Restaurant</h1>' +
+        '<p>This restaurant has really good food. Anthony likes it because these dishes are traditional in Arequipa the place where he was born. In the picture we can see from left to right: Ocopa Arequipeña, Rocoto Relleno, Chupe de Camarones and finally Adobo Arequipeño</p>' +
+        '<img src = "arequipa_restaurant.jpg">';
+    var cieloArequipenoInfo = new google.maps.InfoWindow({
+        content: cieloArequipenoString
+    });
+    cieloArequipenoMarker.addListener('click', function () {
+        cieloArequipenoInfo.open(map, cieloArequipenoMarker);
+    });
+
+
     // Arequipa Temple
     var arequipaTempleLatLng = { lat: -16.374935, lng: -71.538171 }
     var arequipaTempleMarker = new google.maps.Marker({
@@ -209,7 +230,7 @@ function initMap() {
         '<div id="siteNotice">' +
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Ica Childhood House</h1>' +
-        '<p>Anthony lived here with his family since he was 10 until he was 14 years old.</p>' +
+        '<p>Anthony lived here with his family since he was 10 until he was 14 years old. On August 15, 2007 at 6:41 PM peruvian time an earthquake happened 50 kms away from this city. It was such an experience for Anthony and his family.</p>' +
         '<img src = "ica_house.jpg">';
     var rosasIcaHouseInfo = new google.maps.InfoWindow({
         content: rosasIcaHouseString
@@ -260,7 +281,7 @@ function initMap() {
     });
 
     // Trilce High School 
-    var trilceHighSchoolLatLng = { lat: 40.881784, lng: -111.871361 }
+    var trilceHighSchoolLatLng = { lat: -12.050858, lng: -77.043305 }
     var trilceHighSchoolMarker = new google.maps.Marker({
         position: trilceHighSchoolLatLng,
         map: map,
