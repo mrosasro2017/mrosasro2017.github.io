@@ -6,7 +6,7 @@
     MapView
 ) {
         const map = new Map({
-            basemap: "streets-navigation-vector"
+            basemap: "streets-night-vector"
         });
 
         const view = new MapView({
