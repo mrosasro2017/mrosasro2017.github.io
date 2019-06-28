@@ -1,30 +1,42 @@
-﻿html, body, #viewDiv {
-    width: 100%;
-    height: 97%;
-    padding: 0;
-    margin: 0;
-    background-color: #29b563;
+﻿ html, body, #viewDiv {
+    height: 100%;
 }
 
+ html {
+    background-image: url("bg_bucketListMap.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#viewDiv {
+    
+    margin: 10px;
+    align-self: center;
+    border: 15px outset blue;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-style: italic;
-    font-style: bold;
+    font-weight: bold;
     font-size: 48px;
-    color: rgb (33,137,57);
+    color: white;
     text-align: center;
 }
 
 h2 {
     font-family: 'Bookman Old Style';
     font-size: 20px;
-    color: rgb (15,68,28);
+    color: white;
     text-align: center;
 }
 
 p {
     font-family: 'Bookman Old Style';
     font-size: 20px;
-    color: rgb (15,68,28);
+    color: white;
     text-align: center;
 }
