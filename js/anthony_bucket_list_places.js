@@ -38,8 +38,13 @@
             36.093518,
             37.827199,
             - 0.444628,
-            10.394735
-
+            -22.951977,
+            17.224700,
+            - 18.287081,
+            - 25.34454,
+            - 45.606106,
+            - 13.044373,
+            - 14.043825
         ];
 
         let longitudesList = [
@@ -61,8 +66,13 @@
             - 112.108111,
             - 122.423203,
             - 90.269986,
-            - 75.509215
-
+            -43.210643,
+            - 89.610479,
+            147.699194,
+            131.037662,
+            167.360766,
+            132.529217,
+            - 171.562258           
         ];
 
         let bucketListPlacesNames = [
@@ -84,8 +94,13 @@
             "Grand Canyon National Park, Arizona, United States",
             "San Francisco, California, United States",
             "Galapagos Islands, Ecuador",
-            "Cartagena de Indias, Colombia"
-
+            "Christ the Redeemer, Rio de Janeiro, Brazil",
+            "Tikal Ruins, Guatemala",
+            "Great Barrier Reef, Australia",
+            "Uluru, Australia",
+            "Fiordland National Park, New Zealand",
+            "Kakadu National Park, Australia",
+            "To Sua Ocean Trench, Samoa"
         ];
 
         let placesDescriptionList = [
@@ -94,21 +109,51 @@
             "I would love to visit the Pyramids of Giza in Egypt. Personally I love the Egyptian History and being able to go there would be a dream come true." +
             "<img alt='Pyramids img' width=100% src='https://cdn.britannica.com/s:300x300/42/94542-120-5736FDEF.jpg'>",
             "Being on an actual Safari is something I want to do for sure in my life. Visiting Serengeti National Park would be the perfect way to accomplish that dream." +
-            "<img alt='Serengeti NP img' width=100% src='https://www.ketsafaris.com/images/serengeti-np.jp' >",
+            "<img alt='Serengeti NP img' width=100% src='https://www.ketsafaris.com/images/serengeti-np.jpg' >",
             "Visiting Egypt would be a dream come true. Walking through those ancient streets and visiting the temples and monuments in El Cairo would be such a good vacation." +
             "<img alt='Cairo img' width=100% src='https://www.egypttoursportal.com/wp-content/uploads/2017/11/Cairo-City-Egypt-Tours-Portal-1-e1511901150793.jpg' >",
             "Cape Town in South Africa is such a marvel. Being able to go to Table Mountain, which is such a romantic spot, with my future wife would be amazing. " +
             "<img alt='Cape Town img' width=100% src='https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/sites/5/2018/07/cape-town-aerial-view-greenpoint-stadium-1600x900.jpg' >",
-            "The Swiss Alps would be cool to see, especially this peak." +
-            "<img alt='Matterhorn img' width=100% src='https://www.outdooractive.com/img//800/24516005/.jpg' >",
-            "My wife's family comes from Norway, and I think the fjords are beautiful." +
-            "<img alt='Nærøyfjord img' width=100% src='https://static1.squarespace.com/static/5549f941e4b0be890383c7c4/t/56b4a9994d088e723de53365/1454680475379/naeroyfjorden.jpg' >",
-            "I would love to backpack up in the cascades. The mountains are breathtaking." +
-            "<img alt='N Cascades NP img' width=100% src='https://www.gannett-cdn.com/-mm-/e6c17e797b5584fba45ce76a17ac39049b00308b/c=0-0-1498-846/local/-/media/2018/10/09/USATODAY/USATODAY/636746887858298738-NorthCascadesNPMichaelRickardSTESmall.jpg?width=3200&height=1680&fit=crop' >",
-            "This is another cool waterfall. It is amazing how big it is." +
-            "<img alt='Victoria Falls img' width=100% src='https://victoriafallstourism.org/wp-content/uploads/2018/01/victoria_falls.jpg'>",
-            "I would really enjoy seeing the history in DC. I could spend a lot of time at the Smithsonian alone." +
-            "<img alt='DC img' width=100% src='https://assets0.roadtrippers.com/uploads/poi_gallery_image/image/322393368/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/poi_gallery_image-image-91820fde-ce83-4f10-9055-4d64ab9d4c00.jpg'>"
+            "The London Tower Bridge is such an iconic monument that I need to see in person no matter what." +
+            "<img alt='London Tower Bridge img' width=100% src='https://secretadventures.org/images/secretadventures_img_hero_sail_throught_tower_bridge.jpg' >",
+            "Last summer I was able to visit the Arc de Triomf in France. I would love to visit its Spanish version in Barcelona." +
+            "<img alt='Arco de Triunfo de Barcelona img' width=100% src='https://www.touropia.com/gfx/d/tourist-attractions-in-barcelona/arc_de_triomf.jpg?v=d312439a111096b638ac60b397ef1dff' >",
+            "I would love to hike in the Swiss Alps. I may not get to the top but I bet wherever I get the view should be breathtaking." +
+            "<img alt='Swiss Alps img' width=100% src='https://d3ertfc829vzop.cloudfront.net/-/media/Tauck/Products/Hero-Images/DA_18_banner.jpg?h=817&la=en&w=1400&rev=7dba0c99823c4beeb060e44039304220&hash=20CBCC14FF47D5C74E0FA9A47D174D4E8F54378D' >",
+            "Athens Greece is such an ancient, beautiful and marvelous city. I remember reading a lot about Greece when I was a kid. It would be great to visit it in person." +
+            "<img alt='Athens img' width=100% src='https://cdn.britannica.com/s:500x350/66/102266-004-65D274D5.jpg'>",
+            "I bet that the Cliffs of Moher in sunset would be such a romantic destination. I would love to go there with my future wife." +
+            "<img alt='Cliffs of Moher img' width=100% src='http://www.cliffs-moher.com/images/cliffs-of-moher.jpg'>",
+            "I would love to visit the Buddha temple in Lantau Island. I dont know much about asian religions. As an LDS member I would love to visit this place and learn a lot about their culture." +
+            "<img alt='Lantau Island img' width=100% src='https://i.redd.it/0mx6qa0xtbcy.jpg'>",
+            "The Sensō - ji Temple in Tokyo looks amazing. I want to walk through its corridors and learn a lot from that visit." +
+            "<img alt='Sensoji Temple img' width=100% src='https://www.planetware.com/photos-large/JPN/japan-tokyo-asakusa-senso-ji-temple.jpg'>",
+            "The Grand Palace in Bangkok Thailand looks like such an amazing place. Sucj a unique design." +
+            "<img alt='Grand Palace Thailand img' width=100% src='http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/attraction-palace/grand-palace/pagePropertiesImage/bangkok-grand-palace.jpg.jpg'>",
+            "The Taj Mahal is soemthing I must see no matter what in my life, I am fascinated by Indian culture. I bet visiting this place is great." +
+            "<img alt='Taj Mahal Temple img' width=100% src='https://www.nationalgeographic.com/content/dam/travel/photos/000/930/93080.ngsversion.1482510710570.adapt.1900.1.jpg'>",
+            "The Great Wall of China is a non-negotiable destination in my bucket list. This is because I want to visit all the Marvels of the World." +
+            "<img alt='Great Wall China img' width=100% src='https://www.planetware.com/wpimages/2018/09/china-beijing-attractions-great-wall-of-china.jpg'>",
+            "Grand Canyon National Park is another breathtaking place to visit. I bet it is super hot weather, but it will be worth it in the end." +
+            "<img alt='Grand Canyon NP img' width=100% src='https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1551194229%2Fgrand-canyon-south-rim-19-GRANDCANYON0219.jpg%3Fitok%3DpXzOkx5_&q=85'>",
+            "San Francisco California is one of the places I would love to go. Specially because of the Golden Gate Bridge." +
+            "<img alt='San Francisco img' width=100% src='https://pbs.twimg.com/media/D0Nh38DUYAEYnc7.jpg'>",
+            "My father and brother went to the Galapagos Islands while I was in my mission. I also want to go there. Hopefully it is sooner than later." +
+            "<img alt='Galapagos img' width=100% src='https://images.newscientist.com/wp-content/uploads/2019/03/27172602/newscientist.27.3.19.gettyimages-576829559-800x533.jpg'>",
+            "Christ the Redeemer is a marvel of the world. Because of this I have always wanted to visit Rio de Janeiro. I bet it is beautiful. Also I heard that the Rio de Janeiro Carnival is amazing." +
+            "<img alt='Rio de Janeiro img' width=100% src='https://cdn.peruforless.com/blog/wp-content/uploads/2013/02/Christ_on_Corcovado_mountain.jpg'>",
+            "The Tikal ruins in Guatemala are so mysterious. These ruins have lots of secrets. I want to visit a Mayan temple in person." +
+            "<img alt='Tikal Guatemala img' width=100% src='https://www.ancient.eu/img/r/p/500x600/3100.jpg?v=1539668741'>",
+            "Being able to do scubadiving in the Great Barrier is one of my lifelong dreams. I would love to achieve it soon." +
+            "<img alt='Great Barrier Reef img' width=100% src='https://auspost.com.au/content/dam/auspost_corp_microsites/collectables/articles-2018/explore-the-great-barrier-reef-during-stamp-collecting-month-2018/explore-the-great-barrier-reef-during-stamp-collecting-month-2018.png'>",
+            "I want to take pictures to Kangaroos from the Uluru monument in Australia." +
+            "<img alt='Uluru Australia img' width=100% src='https://www.anu.edu.au/files/styles/anu_full_920_518/public/story/Uluru%20by%20Andy%20Maguire%20on%20flickr%20920.jpg?itok=irMRZ_Sh'>",
+            "The view in Fiordland National Park, New Zealand is breathtaking, I want to be able to hike there and marvel with the view." +
+            "<img alt='Fiordland NP img' width=100% src='https://www.newzealand.com/assets/Tourism-NZ/Fiordland/56113b64e7/img-1536379062-737-23013-0C766224-0B3D-BC30-B430C77F83D04968__FocalPointCropWzQyNyw2NDAsNDcsNDAsODUsImpwZyIsNjUsMi41XQ.jpg'>",
+            "The Kakadu National Park in Australia is something really good to see. I want to be able to be in Australia with my family and enjoy my time in this incredible National Park." +
+            "<img alt='Kakadu NP img' width=100% src='https://media-cdn.tripadvisor.com/media/photo-s/0e/ba/cb/ef/twin-falls-kakadu-national.jpg'>",
+            "The To Sua Ocean Trench in Samoa is a place where I want to swim for sure. I bet it is so difficult to get there, but so worth it in the end." +
+            "<img alt='To Sua Ocean Trench img' width=100% src='https://www.telegraph.co.uk/content/dam/Travel/2018/August/To%20Sua%20ocean%20trench%20famous%20swimming%20hole%2C%20Upolu%2C%20Samoa%2C%20South%20Pacific.jpg?imwidth=450'>"
         ]
 
         for (let i = 0; i < longitudesList.length; i++) {
@@ -117,7 +162,7 @@
                 symbol: {
                     type: "text",
                     color: "#c13d11",
-                    text: "\ue632",
+                    text: "\ue619",
                     font: {
                         size: 20,
                         family: "CalciteWebCoreIcons"
