@@ -25,7 +25,7 @@ function initMap() {
         "<h1 id='firstHeadin' class='firstHeading'>Anthony's Chimbote House</h1>" +
         '<p>Anthony lived in this house briefly for 6 months before and 6 months after his mission.</p>' +
         '<p> His family (mom, dad, and 2 siblings) are currently living there.</p>' +
-        '<img src = "bellamar_house.jpg">';
+        '<img src = "./images/interactiveGoogleMap/bellamar_house.jpg">';
     var parentsHouseInfo = new google.maps.InfoWindow({
         content: parentsHouseString
     });
@@ -46,7 +46,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Las Gardenias Stake Center</h1>' +
         "<p>Anthony went to church here before and after his mission. Bellamar ward was amazing.</p>" +
-        '<img src = "bellamar_church.JPG">';
+        '<img src = "./images/interactiveGoogleMap/bellamar_church.JPG">';
     var BellamarChurchInfo = new google.maps.InfoWindow({
         content: BellamarChurchString
     });
@@ -67,7 +67,7 @@ function initMap() {
         '</div>' +
         "<h1 id='firstHeadin' class='firstHeading'>Los Nachos Restaurant</h1>" +
         '<p>This is Los Nachos restaurant. You can get a really good ceviche and all kinds of seafood when you eat there.</p>' +
-        '<img src = "nachos_restaurant.JPG">';
+        '<img src = "./images/interactiveGoogleMap/nachos_restaurant.JPG">';
     var nachosInfo = new google.maps.InfoWindow({
         content: nachosString
     });
@@ -87,7 +87,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Chimbote Plaza de Armas</h1>' +
         "<p>This is the main square in Chimbote. Anthony used to go there to chill with his buddies and family.</p>" +
-        '<img src = "chimbote_plaza.jpg">';
+        '<img src = "./images/interactiveGoogleMap/chimbote_plaza.jpg">';
     var chimbotePlazaInfo = new google.maps.InfoWindow({
         content: chimbotePLazaString
     });
@@ -108,7 +108,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Rosas Family House</h1>' +
         '<p>This is the house where Anthony s father grew up. Most of Anthony s aunts, uncles and cousins live nearby.</p>' +
-        '<img src = "rosas_family_house.JPG">';
+        '<img src = "./images/interactiveGoogleMap/rosas_family_house.JPG">';
     var arequipaHouseInfo = new google.maps.InfoWindow({
         content: arequipaHouseString
     });
@@ -129,7 +129,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Anthony s childhood house</h1>' +
         '<p> This is the house where Anthony grew up. He lived here until he was 8 years old with his mom, dad and little sister Marggie.</p>' +
-        '<img src = "arequipa_childhood_house.JPG">';
+        '<img src = "./images/interactiveGoogleMap/arequipa_childhood_house.JPG">';
     var arequipaChildhoodHouseInfo = new google.maps.InfoWindow({
         content: arequipaChildhoodHouseString
     });
@@ -149,7 +149,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Cielo Arequipeño Restaurant</h1>' +
         '<p>This restaurant has really good food. Anthony likes it because these dishes are traditional in Arequipa the place where he was born. In the picture we can see from left to right: Ocopa Arequipeña, Rocoto Relleno, Chupe de Camarones and finally Adobo Arequipeño</p>' +
-        '<img src = "arequipa_restaurant.jpg">';
+        '<img src = "./images/interactiveGoogleMap/arequipa_restaurant.jpg">';
     var cieloArequipenoInfo = new google.maps.InfoWindow({
         content: cieloArequipenoString
     });
@@ -170,7 +170,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Arequipa Peru LDS Temple</h1>' +
         '<p>This is the Arequipa Peru Temple. It is still under construction. It will be dedicated on November 2019. Anthony will try to visit this tempe on Christmas 2019</p>' +
-        '<img src = "arequipa_temple.JPG">';
+        '<img src = "./images/interactiveGoogleMap/arequipa_temple.JPG">';
     var arequipaTempleInfo = new google.maps.InfoWindow({
         content: arequipaTempleString
     });
@@ -190,7 +190,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Trujillo Childhood House</h1>' +
         '<p>Anthony lived here with his family for 2 years (8-10 years old). It was such an adventure because it was the first place where his family moved since he was born.</p>' +
-        '<img src = "trujillo_house.jpg">';
+        '<img src = "./images/interactiveGoogleMap/trujillo_house.jpg">';
     var trujilloHouseInfo = new google.maps.InfoWindow({
         content: trujilloHouseString
     });
@@ -210,7 +210,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Trujillo Peru LDS Temple</h1>' +
         '<p>This is Anthony s favorite temple in Peru. It is just a 2 hour drive from his parents house.</p>' +
-        '<img src = "trujillo_temple.jpg">';
+        '<img src = "./images/interactiveGoogleMap/trujillo_temple.jpg">';
     var trujilloLDSTempleInfo = new google.maps.InfoWindow({
         content: trujilloLDSTempleString
     });
@@ -231,7 +231,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Ica Childhood House</h1>' +
         '<p>Anthony lived here with his family since he was 10 until he was 14 years old. On August 15, 2007 at 6:41 PM peruvian time an earthquake happened 50 kms away from this city. It was such an experience for Anthony and his family.</p>' +
-        '<img src = "ica_house.jpg">';
+        '<img src = "./images/interactiveGoogleMap/ica_house.jpg">';
     var rosasIcaHouseInfo = new google.maps.InfoWindow({
         content: rosasIcaHouseString
     });
@@ -252,7 +252,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Lima Grandparents House</h1>' +
         '<p>This is where Anthony s mom grew up. His grandparents still live here and it is usually the meeting point of all of this side of the family.</p>' +
-        '<img src = "lima_grandparents_house.jpg">';
+        '<img src = "./images/interactiveGoogleMap/lima_grandparents_house.jpg">';
     var limaGrandparentsHouseInfo = new google.maps.InfoWindow({
         content: limaGrandparentsHouseString
     });
@@ -272,7 +272,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Rosas Family Lima House</h1>' +
         '<p>Anthony lived here with his family since he was 14 until he was 16 years old.</p>' +
-        '<img src = "lima_rosas_house.jpg">';
+        '<img src = "./images/interactiveGoogleMap/lima_rosas_house.jpg">';
     var limaHouseInfo = new google.maps.InfoWindow({
         content: limaHouseString
     });
@@ -292,7 +292,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Trilce High School</h1>' +
         '<p>Anthony finished High School here. Really good three years.</p>' +
-        '<img src = "trilce_high_school.jpg">';
+        '<img src = "./images/interactiveGoogleMap/trilce_high_school.jpg">';
     var trilceHighSchoolInfo = new google.maps.InfoWindow({
         content: trilceHighSchoolString
     });
@@ -312,7 +312,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Anthony Apartment</h1>' +
         '<p>Anthony lived by himself here for like a year after his mission when attending to college.</p>' +
-        '<img src = "anthony_apartment.jpg">';
+        '<img src = "./images/interactiveGoogleMap/anthony_apartment.jpg">';
     var anthonyApartmentInfo = new google.maps.InfoWindow({
         content: anthonyApartmentString
     });
@@ -332,7 +332,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">PUCP</h1>' +
         '<p>Anthony attended to college here for a year before transferring to BYU.</p>' +
-        '<img src = "pucp.jpg">';
+        '<img src = "./images/interactiveGoogleMap/pucp.jpg">';
     var pucpInfo = new google.maps.InfoWindow({
         content: pucpString
     });
@@ -352,7 +352,7 @@ function initMap() {
         '</div>' +
         '<h1 id="firstHeadin" class="firstHeading">Lima Peru LDS Temple</h1>' +
         '<p>This is the oldest temple in Peru. such good memories made there.</p>' +
-        '<img src = "lima_temple.jpg">';
+        '<img src = "./images/interactiveGoogleMap/lima_temple.jpg">';
     var limaTempleInfo = new google.maps.InfoWindow({
         content: limaTempleString
     });

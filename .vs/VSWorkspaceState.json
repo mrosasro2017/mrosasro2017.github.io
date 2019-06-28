@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\images",
+    "\\images\\bucketListMap",
     "\\js"
   ],
-  "SelectedNode": "\\css\\unitconvertor_anthony.css",
+  "SelectedNode": "\\bucketListPlacesMap.html",
   "PreviewInSolutionExplorer": false
 }
