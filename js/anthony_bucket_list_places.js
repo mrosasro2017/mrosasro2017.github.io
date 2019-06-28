@@ -162,7 +162,7 @@
                 symbol: {
                     type: "text",
                     color: "#c13d11",
-                    text: "\ue619",
+                    text: "\ue657",
                     font: {
                         size: 20,
                         family: "CalciteWebCoreIcons"
