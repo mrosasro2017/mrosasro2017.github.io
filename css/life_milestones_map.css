@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-image: url("./images/interactiveGoogleMap/bg_interactive_map.png");
+    background-image: url("bg_interactive_map.png");
     background-size: cover;
 }
 
