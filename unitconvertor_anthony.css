@@ -18,6 +18,11 @@
     text-align: center;
 }
 
+#button {
+    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
 p {
     font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     padding: 10;
@@ -31,12 +36,14 @@ text {
     text-align: center;
 }
 
-input {
+#inputNumber {
     font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     padding: 10px;
     border: 2px solid gray;
     border-radius: 10px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 select {
@@ -58,6 +65,8 @@ h1 {
     font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     text-align: center;
     display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 

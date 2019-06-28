@@ -1,14 +1,38 @@
-﻿h1 {
-    font-family: "Bookman Old Style", Gadget, sans-serif;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-image: url("bg_interactive_map.png");
+    background-size: cover;
+}
+
+#map {
+    margin: auto;
+    height: 75%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px outset grey;
+}
+
+h1 {
+    font-family: "Palatino";
     font-style: bold;
-    font-size: 20px;
+    font-size: 2em;
     color: rgb (64,64,64);
 }
 
 p {
-    font-family: Algerian, Geneva, sans-serif;
-    font-size: 15px;
+    font-family: Palatino;
+    font-size: 1.5em;
     color: rgb (64,64,64);
+}
+
+#subheader {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -18,6 +42,6 @@ img {
 h2 {
     background: none;
     font-family: 'Californian FB', Helvetica, sans-serif;
-    color: gray;
     text-align: center;
+    font-size: 3em;
 }
