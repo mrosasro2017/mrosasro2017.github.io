@@ -1,0 +1,45 @@
+html, body {
+    overflow: auto;
+    background-image: url("bg_index.jpg");
+    background-size: cover;
+    color:black;
+}
+
+
+h1 {
+    font-family: "Palatino";
+    font-style: bold;
+    font-size: 2em;
+    color:black;
+    align-content:center;
+}
+
+p {
+    font-family: Palatino;
+    font-size: 1.5em;
+    color: black;
+}
+
+links {
+    font-family: Palatino;
+    font-size: 4em;
+    color: black;
+}
+
+#subheader {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    height: 150%;
+}
+
+h2 {
+    background: none;
+    font-family: 'Californian FB', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
